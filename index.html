@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefan Roux | Software Engineer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0d1117; /* Deep, cool dark background */
+            color: #c9d1d9;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #161b22 !important;
+            border-bottom: 1px solid #30363d;
+        }
+        .hero-section {
+            padding: 100px 0 80px;
+            background: linear-gradient(180deg, #11141a 0%, #0d1117 100%);
+        }
+        .accent-text {
+            color: #58a6ff; /* Cool icy blue accent */
+        }
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #58a6ff;
+        }
+        .btn-custom {
+            background-color: #238636;
+            color: white;
+            border: none;
+        }
+        .btn-custom:hover {
+            background-color: #2ea043;
+            color: white;
+        }
+        .btn-outline-custom {
+            border-color: #30363d;
+            color: #c9d1d9;
+        }
+        .btn-outline-custom:hover {
+            background-color: #30363d;
+            color: white;
+            border-color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Stefan Roux</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center" id="about">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Hi, I'm <span class="accent-text">Stefan</span>.</h1>
+            <h2 class="h4 text-secondary mb-4">Software Engineering Student | Full-Stack Developer</h2>
+            <p class="lead mx-auto mb-5" style="max-width: 600px;">
+                I build robust backend systems and clean, responsive user interfaces. Currently in my final year of studies, looking to build impactful software.
+            </p>
+            <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+                <a href="#projects" class="btn btn-custom btn-lg">View My Work</a>
+                <a href="#contact" class="btn btn-outline-custom btn-lg">Get in Touch</a>
+                <a href="Stefan_Roux_CV.pdf" download class="btn btn-outline-custom btn-lg">Download CV</a>
+            </div>
+        </div>
+    </section>
+
+   <!-- Projects Section -->
+    <section class="py-5" id="projects">
+        <div class="container">
+            <h3 class="fw-bold mb-4 border-bottom border-secondary pb-2">Technical Projects</h3>
+            <div class="row g-4">
+                
+                <!-- E-Commerce Project -->
+                <div class="col-12">
+                    <div class="card p-4">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold accent-text mb-2">E-Commerce Marketplace</h5>
+                            <h6 class="card-subtitle mb-4 text-muted">PHP • Bootstrap • SQL</h6>
+                            <p class="card-text mb-4">
+                                A responsive, full-stack C2C e-commerce platform allowing users to buy and sell items. Implemented Role-Based Access Control (RBAC) and a secure admin panel to manage users, verify sellers, and moderate products.
+                            </p>
+                            <div class="d-flex flex-wrap gap-3">
+                                <a href="https://github.com/stefanroux501/TradeBridge-SA" class="btn btn-outline-custom btn-sm">View on GitHub</a>
+                                <a href="https://tradebridgesa.site.je/" class="btn btn-custom btn-sm">Visit Live Website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-5 bg-dark" id="skills" style="background-color: #11141a !important;">
+        <div class="container">
+            <h3 class="fw-bold mb-4 border-bottom border-secondary pb-2">Technical Skills</h3>
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="p-4 border border-secondary rounded h-100" style="background-color: #161b22;">
+                        <h5 class="accent-text mb-3">Backend & Databases</h5>
+                        <p class="mb-0">Python, PHP, SQL, C++, Java</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border border-secondary rounded h-100" style="background-color: #161b22;">
+                        <h5 class="accent-text mb-3">Frontend</h5>
+                        <p class="mb-0">Bootstrap, HTML5, CSS3, JavaScript</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 border border-secondary rounded h-100" style="background-color: #161b22;">
+                        <h5 class="accent-text mb-3">Tools & Env</h5>
+                        <p class="mb-0">Git, GitHub, VS Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section class="py-5 text-center" id="contact">
+        <div class="container">
+            <h3 class="fw-bold mb-4">Let's Connect</h3>
+            <p class="mb-4">Currently open for software engineering roles.</p>
+            <a href="mailto:stefanroux41@gmail.com" class="btn btn-custom mb-3">Email Me</a>
+            <div class="mt-4">
+                <a href="https://github.com/stefanroux501" class="text-secondary text-decoration-none mx-2">GitHub</a>
+                <a href="https://www.linkedin.com/in/stefan-roux-9760433a8/" class="text-secondary text-decoration-none mx-2">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
